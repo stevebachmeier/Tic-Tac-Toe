@@ -1,4 +1,7 @@
 def choose_symbol(turn):
+	'''
+	Prompts the randomly chosen first player to choose a symbol.
+	'''
 	marker = ""
 	while ((marker != "X") and (marker != "O")):
 		marker = input(f"Player {str(turn)}, choose 'X' or 'O': ").upper()

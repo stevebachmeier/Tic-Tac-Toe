@@ -1,4 +1,7 @@
 def display_board(board):
+	'''
+	Displays the current board layout.
+	'''
 	print("\n"*100)
 	print(f" {board[7]} | {board[8]} | {board[9]} ")
 	print(f"---|---|---")

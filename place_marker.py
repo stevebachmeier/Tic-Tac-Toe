@@ -1,2 +1,5 @@
 def place_marker(board,marker,position):
-    board[position] = marker
+	'''
+	Places the marker at the chosen board position.
+	'''
+	board[position] = marker

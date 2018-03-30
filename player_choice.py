@@ -1,4 +1,7 @@
 def player_choice(board,turn):
+	'''
+	Prompts the current player to choose a board position.
+	'''
 	from space_check import space_check
 	
 	print(f"Player {turn}, you're up!")

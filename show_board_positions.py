@@ -1,4 +1,7 @@
 def show_board_positions():
+	'''
+	Shows the reference board.
+	'''
 	print("\n")
 	print("     7 | 8 | 9 ")
 	print("    ---|---|---")

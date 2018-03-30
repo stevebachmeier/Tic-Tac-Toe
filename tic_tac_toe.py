@@ -15,8 +15,7 @@ while True:
 	board = ["#"," "," "," "," "," "," "," "," "," "]
 	turn = int(choose_first())
 	marker = choose_symbol(turn)
-	marker1 = marker[0]
-	marker2 = marker[1]
+	marker1,marker2 = marker
     
 	# Play
 	while game_on:
@@ -26,6 +25,7 @@ while True:
 			place_marker(board, marker1, position)
 			display_board(board)
 			print("\n")
+			
 			if (win_check(board, marker1)):
 				print(f"Congratulations Player {turn} - you won!")
 				game_on = False
@@ -35,12 +35,14 @@ while True:
 					break
 				else:
 					turn = 2
+					
 		# Player 2's turn
 		else:
 			position = player_choice(board,turn)
 			place_marker(board, marker2, position)
 			display_board(board)
 			print("\n")
+			
 			if (win_check(board, marker2)):
 				print(f"Congratulations Player {turn} - you won!")
 				game_on = False
@@ -50,5 +52,8 @@ while True:
 					break
 				else:
 					turn = 1
+					
 	if replay() == False:
+		print("\n")
+		print("Thanks for playing!")
 		break
